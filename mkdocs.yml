@@ -1,0 +1,78 @@
+site_name: Architecting Governed AI in Financial Payment Platforms
+site_description: A vendor-neutral reference architecture for governed AI integration in regulated financial payment systems.
+
+Architecture:
+  - Domain Overview: architecture/domain-overview.md
+  - Domain Layers: architecture/domain-layers.md
+  - Domain Diagram: architecture/domain-diagram.md
+  - Reference Architecture: architecture/reference-architecture.md
+  - Principles: architecture/principles.md
+
+theme:
+  name: material
+  features:
+    - navigation.tabs
+    - navigation.sections
+    - toc.follow
+    - content.code.copy
+
+extra_css:
+  - stylesheets/extra.css
+
+plugins:
+  - search
+  - mermaid2
+
+markdown_extensions:
+  - admonition
+  - toc:
+      permalink: ""
+  - pymdownx.details
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:mermaid2.fence_mermaid_custom
+
+nav:
+  - Home: index.md
+
+  - Security: security.md
+
+  - Problem Context:
+      - Overview: problem-context/start-here.md
+      - Problem Statement: problem-context/problem-statement.md
+
+  - Architecture:
+      - Domain Overview: architecture/domain-overview.md
+      - Domain Layers: architecture/domain-layers.md
+      - Domain Diagram: architecture/domain-diagram.md
+      - Reference Architecture: architecture/reference-architecture.md
+      - Principles: architecture/principles.md
+      - End-to-End AI Advisory Flow: architecture/end-to-end-ai-advisory-flow.md
+
+  - Use Cases:
+      - Fraud Advisory: use-cases/fraud-advisory.md
+      - Payment Exception Analysis: use-cases/payment-exception-analysis.md
+      - Operations Optimization: use-cases/operations-optimization.md
+
+  - Controls & Compliance:
+      - Overview: controls/controls-and-compliance.md
+      - Compliance Scope Baseline: controls/compliance-scope-baseline.md
+      - Practical Control Alignment: controls/practical-control-alignment.md
+      - NIST AI RMF Overlay: controls/nist-ai-rmf-overlay.md
+
+  - AI Model:
+      - Advisory Model: ai/advisory-by-default.md
+      - Decision Framework: ai/decision-framework.md
+ 
+
+  - Governance:
+      - Operating Model: governance/governance-operating-model.md
+
+  - Deployment:
+      - Deployment Model: deployment/deployment-model.md
+      - Portability & Exit Strategy: deployment/deployment-portability.md
+
+  - About: about.md
+  
